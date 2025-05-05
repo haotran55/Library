@@ -78,7 +78,7 @@ def get_icon():
         return jsonify({"error": "Invalid ID. Please enter a valid signed integer."}), 400
 
     # Change the path to the correct location of your assets.txt
-    filename = "/root/assets.txt"  # Modify with the correct path
+    filename = "./assets.txt"  # Modify with the correct path
     hex_value = signed_int_to_hex(signed_int)
     text_value = hex_to_text(hex_value)
     sanitized_text_value = sanitize_text(text_value)
